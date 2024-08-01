@@ -1,3 +1,5 @@
+#!bin/bash
+
 record() {
     # Generate a timestamp
     TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
