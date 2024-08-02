@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Record.sh Installation</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="https://static-00.iconduck.com/assets.00/media-record-symbolic-icon-2048x2048-fw9fbtxe.png" type="image/png">
+  <style>
+    .hero-section {
+      background: #282c34;
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+    .installation-section {
+      padding: 50px 0;
+    }
+    .installation-steps {
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    .footer {
+      background: #282c34;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="https://static-00.iconduck.com/assets.00/media-record-symbolic-icon-2048x2048-fw9fbtxe.png" width="30" height="30" class="d-inline-block align-top" alt="Record.sh Logo">
+      Record.sh
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="features.html">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="installation.html">Installation</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <h1 class="display-4">Install Record.sh</h1>
+      <p class="lead">Follow these steps to get Record.sh up and running on your system.</p>
+    </div>
+  </section>
+
+  <!-- Installation Instructions Section -->
+  <section class="installation-section">
+    <div class="container">
+      <h2 class="text-center">Installation Instructions</h2>
+      <p class="text-center mt-3">To use Record.sh, you'll need to have <code>curl</code> installed on your system. If you don't have <code>curl</code>, please install it first.</p>
+      
+      <h3 class="mt-5">Setup Record.sh</h3>
+      <p class="text-center mt-3">Once <code>curl</code> is installed, you can set up Record.sh by injecting the script directly into your <code>.bashrc</code> or <code>.zshrc</code> file. Run the following commands:</p>
+      
+      <div class="installation-steps">
+        <h4>For Bash users:</h4>
+        <pre><code>curl -s https://record-sh.vercel.app/record.sh >> ~/.bashrc
+source ~/.bashrc</code></pre>
+        
+        <h4>For Zsh users:</h4>
+        <pre><code>curl -s https://record-sh.vercel.app/record.sh >> ~/.zshrc
+source ~/.zshrc</code></pre>
+      </div>
+      
+      <p class="text-center mt-3">These commands will download the Record.sh script silently and append it to your <code>.bashrc</code> or <code>.zshrc</code> file. The final command reloads the respective configuration file to apply the changes.</p>
+      
+      <h3 class="mt-5 text-center">Execute Record.sh</h3>
+      <p class="text-center mt-3">To execute Record.sh, use the following command:</p>
+      <pre class="text-center"><code>record</code></pre>
+      <p class="text-center mt-3">You can run this command from any directory to execute the script. Ensure that you have the necessary permissions and environment setup to execute it successfully.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Record.sh. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
