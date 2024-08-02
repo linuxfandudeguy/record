@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,6 +27,11 @@
       padding: 20px 0;
       text-align: center;
     }
+    pre {
+      background: #f8f9fa;
+      padding: 10px;
+      border-radius: 5px;
+    }
   </style>
 </head>
 <body>
@@ -47,6 +51,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#installation">Installation</a>
         </li>
       </ul>
     </div>
@@ -90,6 +97,90 @@
     <div class="container">
       <h2 class="text-center">About Us</h2>
       <p class="text-center mt-3">Record.sh is dedicated to providing a simple and efficient way to record and save terminal activity logs. Our tool is designed for developers, educators, and IT professionals who need to keep track of their terminal sessions and easily share or review them later.</p>
+    </div>
+  </section>
+
+  <!-- Installation Instructions Section -->
+  <section id="installation" class="installation-section">
+    <div class="container">
+      <h2 class="text-center">Installation Instructions</h2>
+      <p class="text-center mt-3">To use Record.sh, you need to have <code>curl</code> installed on your system. Here are the commands to install <code>curl</code> on various platforms:</p>
+      <div class="row mt-5">
+        <div class="col-md-4 text-center">
+          <h4>Ubuntu/Debian</h4>
+          <pre><code>sudo apt update
+sudo apt install curl</code></pre>
+        </div>
+        <div class="col-md-4 text-center">
+          <h4>Fedora</h4>
+          <pre><code>sudo dnf install curl</code></pre>
+        </div>
+        <div class="col-md-4 text-center">
+          <h4>Arch Linux</h4>
+          <pre><code>sudo pacman -S curl</code></pre>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-4 text-center">
+          <h4>OpenSUSE</h4>
+          <pre><code>sudo zypper install curl</code></pre>
+        </div>
+        <div class="col-md-4 text-center">
+          <h4>Gentoo</h4>
+          <pre><code>sudo emerge -a net-misc/curl</code></pre>
+        </div>
+        <div class="col-md-4 text-center">
+          <h4>Solus</h4>
+          <pre><code>sudo eopkg install curl</code></pre>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-4 text-center">
+          <h4>Alpine Linux</h4>
+          <pre><code>sudo apk add curl</code></pre>
+        </div>
+        <div class="col-md-4 text-center">
+          <h4>Void Linux</h4>
+          <pre><code>sudo xbps-install -S curl</code></pre>
+        </div>
+        <div class="col-md-4 text-center">
+          <h4>Slackware</h4>
+          <pre><code>sudo slackpkg install curl</code></pre>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-4 text-center">
+          <h4>Flatpak</h4>
+          <pre><code>flatpak install flathub org.curl</code></pre>
+        </div>
+        <div class="col-md-4 text-center">
+          <h4>Snap</h4>
+          <pre><code>sudo snap install curl</code></pre>
+        </div>
+        <div class="col-md-4 text-center">
+          <h4>RubyGems</h4>
+          <pre><code>gem install curl</code></pre>
+        </div>
+      </div>
+
+      <!-- New instructions to inject the script directly into bashrc or zshrc -->
+      <div class="row mt-5">
+        <div class="col-md-12 text-center">
+          <h4>Setup Record.sh</h4>
+          <p class="text-center mt-3">Once <code>curl</code> is installed, you can set up Record.sh by injecting the script directly into your <code>.bashrc</code> or <code>.zshrc</code> file. Run the following commands:</p>
+          <pre><code># For Bash users
+curl -s https://record-sh.vercel.app/record.sh >> ~/.bashrc
+source ~/.bashrc
+
+# For Zsh users
+curl -s https://record-sh.vercel.app/record.sh >> ~/.zshrc
+source ~/.zshrc</code></pre>
+          <p class="text-center mt-3">These commands will download the Record.sh script silently and append it to your <code>.bashrc</code> or <code>.zshrc</code> file. The final command reloads the respective configuration file to apply the changes.</p>
+          <p class="text-center mt-3">To execute Record.sh, use the following command:</p>
+          <pre><code>record</code></pre>
+          <p class="text-center mt-3">You can run this command from any directory to execute the script. Ensure that you have the necessary permissions and environment setup to execute it successfully.</p>
+        </div>
+      </div>
     </div>
   </section>
 
