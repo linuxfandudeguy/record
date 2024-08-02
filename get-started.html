@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Started - Record.sh</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="https://static-00.iconduck.com/assets.00/media-record-symbolic-icon-2048x2048-fw9fbtxe.png" type="image/png">
+  <style>
+    .hero-section {
+      background: #282c34;
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+    .get-started-section {
+      padding: 50px 0;
+    }
+    .footer {
+      background: #282c34;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    pre {
+      background: #f8f9fa;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="https://static-00.iconduck.com/assets.00/media-record-symbolic-icon-2048x2048-fw9fbtxe.png" width="30" height="30" class="d-inline-block align-top" alt="Record.sh Logo">
+      Record.sh
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="features.html">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="installation.html">Installation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+       
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <h1 class="display-4">Get Started with Record.sh</h1>
+      <p class="lead">Follow these steps to set up and use Record.sh to record your terminal sessions.</p>
+    </div>
+  </section>
+
+  <!-- Get Started Section -->
+  <section class="get-started-section">
+    <div class="container">
+      <h2 class="text-center">Setting Up Record.sh</h2>
+      <p class="text-center mt-3">To start using Record.sh, follow these steps:</p>
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <h4>1. Install Curl</h4>
+          <p>Make sure you have <code>curl</code> installed on your system. If not, follow the installation instructions for your platform:</p>
+          <ul>
+            <li><strong>Ubuntu/Debian:</strong> <pre><code>sudo apt update
+sudo apt install curl</code></pre></li>
+            <li><strong>Fedora:</strong> <pre><code>sudo dnf install curl</code></pre></li>
+            <li><strong>Arch Linux:</strong> <pre><code>sudo pacman -S curl</code></pre></li>
+            <li><strong>OpenSUSE:</strong> <pre><code>sudo zypper install curl</code></pre></li>
+            <li><strong>Gentoo:</strong> <pre><code>sudo emerge -a net-misc/curl</code></pre></li>
+            <li><strong>Solus:</strong> <pre><code>sudo eopkg install curl</code></pre></li>
+            <li><strong>Alpine Linux:</strong> <pre><code>sudo apk add curl</code></pre></li>
+            <li><strong>Void Linux:</strong> <pre><code>sudo xbps-install -S curl</code></pre></li>
+            <li><strong>Slackware:</strong> <pre><code>sudo slackpkg install curl</code></pre></li>
+            <li><strong>Flatpak:</strong> <pre><code>flatpak install flathub org.curl</code></pre></li>
+            <li><strong>Snap:</strong> <pre><code>sudo snap install curl</code></pre></li>
+            <li><strong>RubyGems:</strong> <pre><code>gem install curl</code></pre></li>
+            <li><strong>Hannah Montana Linux:</strong> <pre><code>sudo hmtl-install curl</code></pre></li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h4>2. Inject Record.sh into .bashrc or .zshrc</h4>
+          <p>Once <code>curl</code> is installed, set up Record.sh by running the appropriate commands:</p>
+          <h5>For Bash Users</h5>
+          <pre><code>curl -s https://record-sh.vercel.app/record.sh >> ~/.bashrc
+source ~/.bashrc</code></pre>
+          <h5>For Zsh Users</h5>
+          <pre><code>curl -s https://record-sh.vercel.app/record.sh >> ~/.zshrc
+source ~/.zshrc</code></pre>
+          <p>These commands will download the Record.sh script and append it to your <code>.bashrc</code> or <code>.zshrc</code> file, then reload the configuration file to apply the changes.</p>
+        </div>
+      </div>
+      <h2 class="text-center mt-5">Using Record.sh</h2>
+      <p class="text-center mt-3">After installation, you can use the <code>record</code> command to start recording your terminal sessions. Simply type:</p>
+      <pre><code>record</code></pre>
+      <p class="text-center mt-3">You can run this command from any directory. Ensure you have the necessary permissions and environment setup to execute it successfully.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Record.sh. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
